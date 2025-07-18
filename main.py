@@ -1,5 +1,8 @@
 from flask import Flask, jsonify
 from playwright.sync_api import sync_playwright
+import os
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "/tmp/playwright"
+
 
 app = Flask(__name__)
 
